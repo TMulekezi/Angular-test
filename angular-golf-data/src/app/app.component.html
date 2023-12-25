@@ -1,0 +1,26 @@
+<h1>{{ title }}</h1>
+<button (click)="test()">Generate Data</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>Position</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Naitonality</th>
+      <th>Score</th>
+      <th>Holes Played</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let golfer of golfers">
+      <td>{{ golfer.position }}</td>
+      <td>{{ golfer.firstName }}</td>
+      <td>{{ golfer.lastName }}</td>
+      <td>{{ golfer.nationality }}</td>
+      <td>{{ golfer.score }}</td>
+      <td>{{ golfer.holesPlayed }}</td>
+    </tr>
+  </tbody>
+</table>
